@@ -1,0 +1,312 @@
+.backdrop {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition-duration: 1500ms;
+  }
+  
+  .modal {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow: hidden auto;
+    padding: 20px 0;
+    display: flex;
+    transition-property: transform;
+  }
+  
+  .modal-form-box {
+    border-radius: 4px;
+    padding: 40px;
+    width: 528px;
+    background-color: white;
+    position: relative;
+    width: 528px;
+    position: relative;
+    background-color: #fff;
+    margin: auto;
+    transition: all .4s ease;
+    
+    transition-delay: .5s;
+  }
+  
+  
+  .backdrop.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    transition-duration: 1500ms;
+  }
+  
+  .is-hidden .modal-form-box {
+   
+    transition-delay: 0s;
+  }
+  .btn-modal {
+    color: black;
+    width: 30px;
+    height: 30px;
+  border-radius: 50%;
+    outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    
+  
+    &:hover {
+      color: #2196f3;
+    }
+  
+  }
+  
+  
+  .modal-icon {
+    
+    fill: currentColor;
+  }
+  
+  .form-backdrop__heading {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 20px;
+    letter-spacing: 0.03em;
+  }
+  
+  
+  .btn-modal-push {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 200px;
+    height: 50px;
+    border: 0 solid transparent;
+    color: white;
+    background-color: #2196f3;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 0;
+    padding: 0;
+  }
+  
+  .modal-title-box {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  
+  .contact-form-massage {
+  
+    padding: 12px 16px;
+    width: 100%;
+    height: 120px;
+  
+    background: white;
+    border-radius: 4px;
+    resize: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    outline: none;
+  }
+  
+  
+  .form-input-mail::-webkit-input-placeholder {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+  
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+  
+    color: rgba(255, 255, 255, 0.6);
+  }
+  
+  
+  .contact-form-text {
+    padding-left: 42px;
+    width: 100%;
+    height: 40px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    resize: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    outline: none;
+  
+    &:hover,
+    &:focus {
+      border-color: #2196f3;
+    }
+  
+    &:focus~.icon-form-input,
+    &:hover~.icon-form-input {
+      fill: #2196f3;
+    }
+  }
+  
+  .text-dec-label {
+    position: absolute;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: #757575;
+    transform: translateY(-100%);
+    top: -4px;
+  }
+  
+  .accept-text-desc {
+    display: inline;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 1.1666;
+    letter-spacing: 0.03em;
+    border-bottom: 2px solid var (--accept-color);
+    color: #2196f3;
+  
+  
+    &-label {
+      display: inline-flex;
+      align-items: center;
+  
+      margin-bottom: 30px;
+  
+      @media screen and (min-width: 480px) {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+  
+  
+      @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.7;
+      }
+  
+  }
+  }
+  
+  .confirmation {
+    
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  
+    &-title {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: 0.03em;
+      color: #757575;
+    }
+  
+   
+  
+    &-title {
+  
+      @media screen and (min-width: 480px) {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+  
+  
+  }
+  }
+  
+  .confirmation-title {
+    display: inline;
+  }
+  
+  .accept-text-desc {
+    display: inline;
+  }
+  
+  .icon-form-input {
+    top: 30px;
+    left: 12px;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    justify-content: center;
+    align-items: center;
+    fill: #212121;
+  }
+  
+  .modal-form-field {
+    max-height: 120px;
+    position: relative;
+  
+    &:not(:nth-child(6)) {
+      margin-bottom: 28px;
+      position: relative;
+    }
+  }
+  
+  
+  .modal-form-confirmation {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    position: relative;
+  }
+  
+  
+  
+  .contact-form-massage:hover,
+  .contact-form-massage:focus {
+    border-color: #2196f3;
+  }
+  
+  .modal-form-field:hover,
+  .modal-form-field:focus {
+    color: #2196f3;
+  }
+  
+  
+  
+  
+  
+  
+  .contact-form-input:checked+.confirmation::before {
+    width: 16px;
+    height: 15px;
+    display: inline-block;
+    background-image: url(../images/icon-check.svg);
+  }
+  
+  .contact-form-input:checked+.confirmation .confirmation-title {
+    color: #2196f3;
+  
+  }
+  
+  .visually-hidden {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+  }
