@@ -10,7 +10,7 @@
 
 <body class="page">
   <!-- Nagłówek -->
-  <header class="header">
+  <!-- <header class="header">
     <div class="container main ">
       <nav class="main__nav">
         <a href="" class="logo logo__logotyp">
@@ -24,7 +24,7 @@
           </svg>
         </button>
 
-        <div class="menu-container" id="menu-container" data-menu>
+        <div class="menu-container haha" id="menu-container" data-menu>
           <ul class="site-nav">
             <li class="item menu-mobile">
               <a href="" class="link current">
@@ -79,6 +79,115 @@
         
         </div>
       </nav>
+    </div>
+  </header> -->
+  
+  <header class="header">
+    <div class="kontener">
+      <div class="header-inner">
+        <nav class="navigation">
+
+          <a class="link logo header-logo" href="./index.html">Web<span class="logotyp">Studio</span></a>
+                  
+          <ul class="navigation-list list">
+            <li class="navigation-list-item">
+              <a class="link navigation-list-link link-current" href="./">Agencja</a>
+            </li>
+            <li class="navigation-list-item">
+              <a class="link navigation-list-link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="navigation-list-item">
+              <a class="link navigation-list-link" href="./">Кontakt</a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="contact-list list">
+          <li class="contact-list-item">
+            <a class="link contact-list-link" href="info@devstudio.com">
+              <svg class="contact-list-icon">
+                <use href="#icon-mail"></use>
+              </svg>
+              <span>info@devstudio.com</span>
+            </a>
+          </li>
+          <li class="contact-list-item">
+            <a class="link contact-list-link" href="+48111111111">
+              <svg class="contact-list-icon">
+                <use href="#icon-telefon"></use>
+              </svg>
+              <span>+48 111 111 111</span>
+            </a>
+          </li>
+        </ul>
+
+        <button type="button" class="menu-button" data-menu-open>
+          <svg width="40" height="40">
+            <use class="icon-menu" href="#icon-menu"></use>
+          </svg>
+        </button>
+
+        
+
+<!-- Mobilne menu -->
+        
+
+        <div class="mobile-menu">
+          <div class="div-button">
+            
+          </div>
+          
+          <div class="mobile is-hidden" data-menu>
+            <button type="button" class="menu-close-button" data-menu-close>
+              <svg width="20px" height="20px">
+                <use class="icon-x" href="#icon-X"></use>
+
+              </svg>
+            </button>
+            
+  
+            <ul class="mobile-nav-list list">
+              <li class="mobile-nav-item">
+                <a class="link mobile-nav-link link-current-mobile" href="./">Agencja</a>
+              </li>
+              <li class="mobile-nav-item">
+                <a class="link mobile-nav-link" href="./portfolio.html">Portfolio</a>
+              </li>
+              <li class="mobile-nav-item">
+                <a class="link mobile-nav-link" href="./">Кontakt</a>
+              </li>
+            </ul>
+  
+            <ul class="mobile-contact-list list">
+              <li class="mobile-contact-item">
+                <a class="link mobile-contact-tel" href="+48111111111">+48 111 111 111</a>
+              </li>
+              <li class="mobile-contact-item">
+                <a class="link mobile-contact-mail" href="info@devstudio.com">info@devstudio.com</a>
+              </li>
+            </ul>
+  
+            <ul class="socials-menu list">
+              <li class="socials-menu-item">
+                <a class="socials-menu-link link" href="#">Instagram</a>
+                <span class="separate">|</span>
+              </li>
+              <li class="socials-menu-item">
+                <a class="socials-menu-link link" href="#">Twitter</a>
+                <span class="separate">|</span>
+              </li>
+              <li class="socials-menu-item">
+                <a class="socials-menu-link link" href="#">Facebook</a>
+                <span class="separate">|</span>
+              </li>
+              <li class="socials-menu-item">
+                <a class="socials-menu-link link" href="#">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+      </div>
     </div>
   </header>
   <main>
@@ -168,7 +277,6 @@
           </li>
           <li class="item">
             <picture>
-              <
               <img src="images/img2.jpg" alt="Projektowanie interfejsu na smartfony" width="370" />
             </picture>
 
@@ -545,6 +653,7 @@
       </div>
   <script src="./js/modal.js"></script>
   <script src="./js/menu.js"></script>
+  <script src="./js/mobile-menu.js"></script>
 
   <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1"
     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
