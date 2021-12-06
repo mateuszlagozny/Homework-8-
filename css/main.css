@@ -1452,7 +1452,7 @@ body {
   text-decoration: none;
 }
 
-.thumb {
+.add-card {
   position: relative;
   overflow: hidden;
 }
@@ -1486,8 +1486,11 @@ body {
 @media screen and (max-width: 450px) {
   .examples-text {
     padding: 20px;
-    overflow: scroll;
   }
+}
+
+.page {
+  position: relative;
 }
 
 .header {
@@ -1495,7 +1498,7 @@ body {
   border-bottom: 1px solid #ececec;
 }
 
-.kontener {
+.container-header {
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
@@ -1504,19 +1507,19 @@ body {
 }
 
 @media screen and (min-width: 480px) {
-  .kontener {
+  .container-header {
     width: 480px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .kontener {
+  .container-header {
     width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .kontener {
+  .container-header {
     width: 1200px;
   }
 }

@@ -52,7 +52,7 @@
         }
       }
     }
-  
+    
     .description {
       padding: 20px 24px;
       border-top: 0;
@@ -89,6 +89,8 @@
     margin-top: 0;
     margin-bottom: 0;
   }
+
+  
   
   .examples-description {
     margin-top: 0;
@@ -104,11 +106,11 @@
     text-decoration: none;
   }
   
-  .thumb {
+  .add-card {
     position: relative;
     overflow: hidden;
   }
-  
+
   .examples-text {
    
     position: absolute;
@@ -135,6 +137,10 @@
     }
      @media screen and (max-width: 450px) {
        padding: 20px;
-        overflow: scroll;
+        // overflow: scroll;
      }
+   }
+
+   .page {
+     position: relative;
    }
