@@ -1610,6 +1610,10 @@ body {
   font-weight: 500;
 }
 
+.mobile {
+  z-index: 1;
+}
+
 .mobile-nav-item {
   margin-bottom: 36px;
 }
